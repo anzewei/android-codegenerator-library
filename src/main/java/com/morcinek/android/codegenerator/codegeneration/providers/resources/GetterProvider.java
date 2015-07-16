@@ -21,12 +21,12 @@ public class GetterProvider extends AbstractResourceProvider {
 
     @Override
     public Set<String> provideAssignment() {
-        return null;
+        return Sets.newHashSet("");
     }
 
     @Override
     public Set<String> provideField() {
-        return null;
+        return Sets.newHashSet("");
     }
 
     @Override

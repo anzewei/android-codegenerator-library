@@ -17,7 +17,7 @@ public class ActivityResourceProvidersFactory implements ResourceProvidersFactor
     public ResourceProvider createResourceProvider(Resource resource) {
         if (isApplicable(resource, "Button", "ImageButton")) {
             return new ButtonProvider(resource);
-        } else if (isApplicable(resource, "CheckBox", "EditText", "View")) {
+        } else if (isApplicable(resource, "EditText")) {
             return new GetterProvider(resource);
         }
         return new DefaultProvider(resource);

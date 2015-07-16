@@ -11,6 +11,7 @@ public class SearchListFragment extends Fragment  {
 
     private ListView list;
     private TextView empty;
+    private EditText searchEditText;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -27,6 +28,6 @@ public class SearchListFragment extends Fragment  {
     }
 
     private EditText getSearchEditText(){
-        return (EditText) getView().findViewById(R.id.search_edit_text);
+        return searchEditText;
     }
 }

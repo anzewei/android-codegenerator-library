@@ -18,8 +18,8 @@ public class FragmentResourceProvidersFactory implements ResourceProvidersFactor
     public ResourceProvider createResourceProvider(Resource resource) {
         if (isApplicable(resource, "Button", "ImageButton")) {
             return getResourceProviderWithContainerPrefix(new ButtonProvider(resource), "view.");
-        } else if (isApplicable(resource, "CheckBox", "EditText", "View")) {
-            return getResourceProviderWithContainerPrefix(new GetterProvider(resource), "getView().");
+        } else if (isApplicable(resource, "EditText")) {
+            return getResourceProviderWithContainerPrefix(new GetterProvider(resource), "view.");
         }
         return getResourceProviderWithContainerPrefix(new DefaultProvider(resource), "view.");
     }

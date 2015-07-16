@@ -72,6 +72,7 @@ public class AssignmentsBuilderTest {
         // then
         Assertions.assertThat(value).isNotNull().isEqualTo(
                 "findViewById(R.id.button).setOnClickListener(this);\n" +
+                        "        view = (View) findViewById(R.id.view);\n"+
                         "        view = (View) findViewById(R.id.view);"
         );
     }
